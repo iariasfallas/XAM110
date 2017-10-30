@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTunes.UWP", "MyTunes.UWP\
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MyTunes.Shared", "MyTunes.Shared\MyTunes.Shared.shproj", "{A25C908F-7901-4BAF-8B89-7058F22B78BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise 1", "Exercise 1", "{8FD4F349-A414-4703-9299-0C7CF9112F82}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MyTunes.Shared\MyTunes.Shared.projitems*{a25c908f-7901-4baf-8b89-7058f22b78bc}*SharedItemsImports = 13
@@ -241,6 +243,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3D17E5F-2659-4EAD-87A1-3B7E56E90807} = {8FD4F349-A414-4703-9299-0C7CF9112F82}
+		{CC9983A8-412B-434B-A38F-84F7F754D6D2} = {8FD4F349-A414-4703-9299-0C7CF9112F82}
+		{F9C452EE-F8D9-4690-B3FB-1EF35A5E1772} = {8FD4F349-A414-4703-9299-0C7CF9112F82}
+		{A25C908F-7901-4BAF-8B89-7058F22B78BC} = {8FD4F349-A414-4703-9299-0C7CF9112F82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84FA515F-4682-45BE-BE93-70547B899DBC}
