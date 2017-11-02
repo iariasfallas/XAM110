@@ -5,16 +5,20 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Reflection;
 using MyTunes.Shared;
+using MyTunes.NetStandard;
+
 namespace MyTunes
 {
 	public static class SongLoader
 	{
 		const string Filename = "songs.json";
         public static IStreamLoader Loader { get; set; }
-		public static async Task<IEnumerable<Song>> Load()
+		public static async Task<IEnumerable<Song>> ImprovedLoad()
 		{
 			using (var reader = new StreamReader(OpenData())) {
-				return JsonConvert.DeserializeObject<List<Song>>(await reader.ReadToEndAsync());
+				var songs =  JsonConvert.DeserializeObject<List<Song>>(await reader.ReadToEndAsync());
+                foreach(Song song in songs) { song.Name = song.Name.RuinSongName(); }
+                return songs;
 			}
 		}
 
