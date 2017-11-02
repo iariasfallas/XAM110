@@ -133,10 +133,6 @@
       <Project>{a8114fd0-22b8-45ed-a608-ef008a855b3c}</Project>
       <Name>MyTunes.NetStandard</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyTunes.Shared\MyTunes.Shared.csproj">
-      <Project>{f242039d-dea3-4312-8726-7c82159a5d9a}</Project>
-      <Name>MyTunes.Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

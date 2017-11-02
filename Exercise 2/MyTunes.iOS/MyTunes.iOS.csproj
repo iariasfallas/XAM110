@@ -161,10 +161,6 @@
       <Project>{a8114fd0-22b8-45ed-a608-ef008a855b3c}</Project>
       <Name>MyTunes.NetStandard</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyTunes.Shared\MyTunes.Shared.csproj">
-      <Project>{f242039d-dea3-4312-8726-7c82159a5d9a}</Project>
-      <Name>MyTunes.Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
